@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>learn-bigdata</module>
+        <module>learn-juc</module>
     </modules>
 
 
