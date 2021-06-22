@@ -10,6 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>learn-bigdata</artifactId>
+  <dependencies>
+      <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+      <dependency>
+          <groupId>com.typesafe.akka</groupId>
+          <artifactId>akka-actor_2.11</artifactId>
+          <version>2.5.32</version>
+      </dependency>
 
+  </dependencies>
 
 </project>
