@@ -8,6 +8,8 @@ import java.util.concurrent.CompletableFuture;
  * 开启一个线程厨师做菜，厨师做好菜
  * 将菜交给服务员，开启一个线程服务员开始打饭
  * 服务员依赖于厨师先做好饭。
+ * thenCompose 在同一个线程里执行
+ * thenComposeAsync不在同一个线程执行 重新开启一个线程
  */
 public class ThenCompose {
     public static void main(String[] args) {

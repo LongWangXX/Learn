@@ -2,6 +2,11 @@ package com.lw.learn.juc.completablefuture;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * thenCombine 結合两个任务的输出结果。结果又结合之后的结果返回
+ *
+ *
+ */
 public class ThenCombine {
     public static void main(String[] args) {
         SmallTool.printTimeAndThread("小白进入餐厅");
