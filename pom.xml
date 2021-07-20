@@ -11,7 +11,15 @@
     <modules>
         <module>learn-bigdata</module>
         <module>learn-juc</module>
+        <module>learn-io</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.50</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
