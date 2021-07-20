@@ -25,11 +25,11 @@ public class ThenCompose {
                 //要求返回一个CompletionStage
                 //CompletionStage是继承CompletionStage所以可以执行使用CompletableFuture.supplyAsync
                 //来开启任务返回CompletableFuture
-                thenCompose(dish -> CompletableFuture.supplyAsync(() -> {
-            SmallTool.printTimeAndThread("服务员打饭");
-            SmallTool.sleepMillis(100);
-            return dish + " + 米饭";
-        }));
+                        thenCompose(dish -> CompletableFuture.supplyAsync(() -> {
+                    SmallTool.printTimeAndThread("服务员打饭");
+                    SmallTool.sleepMillis(100);
+                    return dish + " + 米饭";
+                }));
 
         SmallTool.printTimeAndThread("小白在打王者");
         SmallTool.printTimeAndThread(String.format("%s 好了,小白开吃", cf1.join()));
