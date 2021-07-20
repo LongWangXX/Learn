@@ -9,19 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>learn-bigdata</artifactId>
+    <artifactId>learn-io</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>flink-1.12</module>
+        <module>commons-io</module>
     </modules>
-    <dependencies>
-      <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
-      <dependency>
-          <groupId>com.typesafe.akka</groupId>
-          <artifactId>akka-actor_2.11</artifactId>
-          <version>2.5.32</version>
-      </dependency>
 
-  </dependencies>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
 </project>
