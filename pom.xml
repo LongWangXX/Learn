@@ -12,6 +12,10 @@
         <module>learn-bigdata</module>
         <module>learn-juc</module>
         <module>learn-io</module>
+        <module>learn-curator</module>
+        <module>learn-java</module>
+        <module>learn-akka</module>
+        <module>learn-jvm</module>
     </modules>
     <dependencies>
         <dependency>

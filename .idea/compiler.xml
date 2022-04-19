@@ -2,13 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learn-bigdata" />
         <module name="learn-juc" />
+        <module name="learn-curator" />
+        <module name="learn-jvm" />
+        <module name="learn-data-structure" />
+        <module name="flink-1.12" />
+        <module name="learn-akka" />
+        <module name="commons-io" />
+        <module name="flink1.12" />
+        <module name="learn-java" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flink" target="8" />
+      <module name="flink112" target="1.5" />
+      <module name="learn-datastructure" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
