@@ -4,101 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16c0b7c-1d8e-40b2-8a3b-358a741a9c05" name="Default" comment="learn juc">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cglib_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/classes.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/count.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/dom.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/graph.direct.body" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/graph.direct.head" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/graph.reverse.body" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/graph.reverse.head" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/offsets.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/remap.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/retained.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_pid22748.hprof.gvg1l.b.ij/shallow.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-akka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-akka/src/main/java/com/lw/learn/akka/baseicapi/BuildActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-curator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-curator/src/main/java/com/lw/curator/LeaderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-curator/src/main/java/com/lw/curator/ZkLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP01_硬币找零问题.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP02_01背包.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP03_完全背包.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP04_跳跃游戏.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP06_地下城游戏.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP07_买股票问题.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/DP_08不重叠的子数组之和.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/Dp05_不同路径.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-java/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-java/src/main/java/com/lw/learn/dynamicproxy/AkkaInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-java/src/main/java/com/lw/learn/dynamicproxy/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-java/src/main/java/com/lw/learn/dynamicproxy/TaskExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-java/src/main/java/com/lw/learn/dynamicproxy/TaskExecutorGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter10/AutoBoxing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter10/NameChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter12/VolatileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter13/AtomicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter13/VectorTestCase_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter13/VectorTestCase_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/DirectMemoryOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/HeapOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaMethodAreaOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaVMStackOOM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaVMStackSOF_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaVMStackSOF_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaVMStackSOF_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/RuntimeConstantPoolOOM_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/RuntimeConstantPoolOOM_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter3/FinalizeEscapeGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter3/ReferenceCountingGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter3/TestSerialGCAllocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter4/BTraceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter4/JConsoleTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter4/JHSDBTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter4/ThreadDeadLockTestCase_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter4/ThreadDeadLockTestCase_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter5/EclipseStartTime_1.0.0.201011281102.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/ClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/ConstClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/DeadLoopTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/FieldResolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/NotInitialization_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/NotInitialization_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/NotInitialization_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/SubClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter7/SuperClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/Dispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/DynamicDispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/FieldHasNoPolymorphic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/GrandFatherTestCase_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/GrandFatherTestCase_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/InvokeDynamicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/MethodHandleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/Overload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/StaticDispatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter8/StaticResolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/ByteUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/ClassModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/DynamicProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/HackSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/HotSwapClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter9/JavaclassExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-bigdata/flink-1.12/flink-1.12.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-data-structure/learn-data-structure.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-juc/learn-juc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="b16c0b7c-1d8e-40b2-8a3b-358a741a9c05" name="Default" comment="learn data">
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/classes.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/count.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/dom.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/graph.direct.body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/graph.direct.head" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/graph.reverse.body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/graph.reverse.head" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/offsets.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/remap.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/retained.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_pid23228.hprof.gvg1l.b.ij/shallow.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter3/ReferenceCountingGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter3/ReferenceCountingGC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,7 +302,7 @@
       <recent name="com.lw.learn.flink.window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HeapOOM">
+  <component name="RunManager" selected="Application.ReferenceCountingGC">
     <configuration name="DP06_地下城游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lw.data.dp.DP06_地下城游戏" />
       <module name="learn-data-structure" />
@@ -439,21 +359,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReferenceCountingGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.fenixsoft.jvm.chapter3.ReferenceCountingGC" />
+      <module name="learn-jvm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.fenixsoft.jvm.chapter3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -479,9 +411,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dp05_不同路径.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp/Dp05_不同路径.js" working-dir="$PROJECT_DIR$/learn-data-structure/src/main/java/com/lw/data/dp">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
@@ -497,15 +426,15 @@
       <item itemvalue="Application.DP07_买股票问题" />
       <item itemvalue="Application.DP_08不重叠的子数组之和" />
       <item itemvalue="Application.HeapOOM" />
-      <item itemvalue="Node.js.Dp05_不同路径.js" />
+      <item itemvalue="Application.ReferenceCountingGC" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReferenceCountingGC" />
         <item itemvalue="Application.HeapOOM" />
         <item itemvalue="Application.DP07_买股票问题" />
         <item itemvalue="Application.DP_08不重叠的子数组之和" />
         <item itemvalue="Application.DP06_地下城游戏" />
-        <item itemvalue="Node.js.Dp05_不同路径.js" />
       </list>
     </recent_temporary>
   </component>
@@ -567,6 +496,7 @@
       <workItem from="1646405070048" duration="2917000" />
       <workItem from="1649165092803" duration="3032000" />
       <workItem from="1649688038936" duration="1745000" />
+      <workItem from="1649805708451" duration="4345000" />
     </task>
     <task id="LOCAL-00001" summary="learn juc completablefuture">
       <created>1624375711515</created>
@@ -596,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626790755253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="learn data">
+      <created>1649805810876</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649805810876</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -645,7 +582,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="learn juc completablefuture" />
     <MESSAGE value="learn juc" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn juc" />
+    <MESSAGE value="learn data" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
