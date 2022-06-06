@@ -8,7 +8,6 @@ public class BinaryTree_01Z字形打印二叉树 {
         int val;
         TreeNode left;
         TreeNode right;
-
         TreeNode(int x) {
             val = x;
         }

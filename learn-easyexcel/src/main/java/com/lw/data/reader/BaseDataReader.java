@@ -1,4 +1,6 @@
-package com.lw.data.importer;
+package com.lw.data.reader;
+
+import com.lw.data.ImporterException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,10 +8,10 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.CompletableFuture;
 
 public abstract class BaseDataReader<T> implements DataReader<T> {
-    private ArrayBlockingQueue<T> queue = new ArrayBlockingQueue(100000);
+    private ArrayBlockingQueue<Object> queue = new ArrayBlockingQueue<>(100000);
     volatile CompletableFuture<Void> readerCom;
 
-    public ArrayBlockingQueue<T> getQueue() {
+    public ArrayBlockingQueue<Object> getQueue() {
         return queue;
     }
 
@@ -18,14 +20,17 @@ public abstract class BaseDataReader<T> implements DataReader<T> {
         ArrayList<T> datas = new ArrayList<>();
         try {
             if (readerCom == null && queue.isEmpty()) {
-                throw new RuntimeException("请先调用StartReader方法");
+                throw new ImporterException("请先调用StartReader方法");
             }
             int cnt = 0;
             int sleepCnt = 0;
-            while ((readerCom != null || !queue.isEmpty()) && sleepCnt < 30000000) {
-                T poll = queue.poll();
+            while ((readerCom != null || !queue.isEmpty()) && sleepCnt < 30) {
+                Object poll = queue.poll();
                 if (poll != null) {
-                    datas.add(poll);
+                    if (poll instanceof RuntimeException) {
+                        throw (RuntimeException) poll;
+                    }
+                    datas.add((T) poll);
                     if (cnt++ >= batchCount) {
                         return datas;
                     }
@@ -36,7 +41,8 @@ public abstract class BaseDataReader<T> implements DataReader<T> {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
+            throw (RuntimeException) e;
         }
         return datas;
     }

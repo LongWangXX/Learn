@@ -28,13 +28,13 @@ public class TimeServiceDemo {
         WatermarkStrategy<WaterSensor> wms = WatermarkStrategy
                 .<WaterSensor>forBoundedOutOfOrderness(Duration.ofSeconds(3))
                 .withTimestampAssigner((element, recordTimestamp) -> element.getTs() * 1000);
-
         stream
                 .assignTimestampsAndWatermarks(wms)
                 .keyBy(WaterSensor::getId)
                 .process(new KeyedProcessFunction<String, WaterSensor, String>() {
                     int lastVc = -1;
                     long timerTS = Long.MIN_VALUE;
+
                     @Override
                     public void processElement(WaterSensor value, Context ctx, Collector<String> out) throws Exception {
                         if (value.getVc() > lastVc) {

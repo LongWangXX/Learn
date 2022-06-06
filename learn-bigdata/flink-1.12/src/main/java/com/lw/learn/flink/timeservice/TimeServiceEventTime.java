@@ -10,19 +10,17 @@ import org.apache.flink.util.Collector;
 import java.time.Duration;
 
 /**
- *
  * 时间进展依据的是watermark
  */
 public class TimeServiceEventTime {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        env.setParallelism(2);
+        env.setParallelism(1);
         SingleOutputStreamOperator<WaterSensor> stream = env
-                .socketTextStream("hadoop102", 9999)  // 在socket终端只输入毫秒级别的时间戳
+                .socketTextStream("192.168.8.22", 9999)  // 在socket终端只输入毫秒级别的时间戳
                 .map(value -> {
                     String[] datas = value.split(",");
                     return new WaterSensor(datas[0], Long.valueOf(datas[1]), Integer.valueOf(datas[2]));
-
                 });
 
         WatermarkStrategy<WaterSensor> wms = WatermarkStrategy

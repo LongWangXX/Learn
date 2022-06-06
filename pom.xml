@@ -16,6 +16,7 @@
         <module>learn-java</module>
         <module>learn-akka</module>
         <module>learn-jvm</module>
+        <module>learn-easyexcel</module>
     </modules>
     <dependencies>
         <dependency>

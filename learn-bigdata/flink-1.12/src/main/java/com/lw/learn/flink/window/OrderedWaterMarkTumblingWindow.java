@@ -28,7 +28,7 @@ public class OrderedWaterMarkTumblingWindow {
         Date date = new Date(1625323525 * 1000L);
         System.out.println(date);
         SingleOutputStreamOperator<WaterSensor> stream = env
-                .socketTextStream("hadoop102", 9999)
+                .socketTextStream("192.168.8.22", 9999)
 //                .addSource(new SourceFunction<String>() {
 //                    private boolean isRunning = true;
 //                    @Override
@@ -55,7 +55,7 @@ public class OrderedWaterMarkTumblingWindow {
                         String[] datas = value.split(",");
                         return new WaterSensor(datas[0], Long.valueOf(datas[1]), Integer.valueOf(datas[2]));
                     }
-                });
+                }).returns(WaterSensor.class);
 
         // 创建水印生产策略
         WatermarkStrategy<WaterSensor> objectWatermarkStrategy = WatermarkStrategy.<WaterSensor>forMonotonousTimestamps().withTimestampAssigner(
@@ -87,7 +87,8 @@ public class OrderedWaterMarkTumblingWindow {
                 })
                 .window(TumblingEventTimeWindows.of(Time.seconds(5)))
                 .allowedLateness(Time.seconds(3))//	允许迟到只能运用在event time上，窗口到了关闭的时间了，但是延迟三秒再关闭窗口 也就是在watermark + 3的时间才真正关闭
-                .sideOutputLateData(new OutputTag<WaterSensor>("TEST"){}
+                .sideOutputLateData(new OutputTag<WaterSensor>("TEST") {
+                                    }
                 )
                 .process(new ProcessWindowFunction<WaterSensor, String, String, TimeWindow>() {
                     @Override
@@ -100,7 +101,7 @@ public class OrderedWaterMarkTumblingWindow {
                 });
 
         testStream.getSideOutput(new OutputTag<WaterSensor>("TEST")).print();
-         testStream
+        testStream
                 .addSink(new SinkFunction<String>() {
                     @Override
                     public void invoke(String value, Context context) throws Exception {

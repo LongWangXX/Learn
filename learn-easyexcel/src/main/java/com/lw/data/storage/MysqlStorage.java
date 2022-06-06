@@ -1,7 +1,8 @@
-package com.lw.data.importer;
+package com.lw.data.storage;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lw.DemoData;
+import com.lw.data.ImporterException;
+import com.lw.data.util.Util;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
@@ -22,23 +23,16 @@ public class MysqlStorage<T> implements DataStorage<T> {
     public void writer(List<T> list) {
         try {
             connection.setAutoCommit(false);
-            long l = System.currentTimeMillis();
             for (int j = 0; j < list.size(); j++) {
                 int i = 1;
-//                for (Field declaredField : declaredFields) {
-//                    Object o = declaredField.get(list.get(j));//
-//                    preparedStatement.setObject(i++, o);
-//                }
-                DemoData o = (DemoData) list.get(j);
-                preparedStatement.setObject(1, o.getHireDate());
-                preparedStatement.setObject(2, o.getName());
-                preparedStatement.setObject(3, o.getSalary());
+                for (Field declaredField : declaredFields) {
+                    Object o = declaredField.get(list.get(j));
+                    preparedStatement.setObject(i++, o);
+                }
                 preparedStatement.addBatch();
             }
             preparedStatement.executeBatch();
             connection.commit();
-            long n = System.currentTimeMillis();
-            System.out.println("mysqlInsertTime="+(n - l));
         } catch (Exception e) {
             try {
                 connection.rollback();
@@ -47,7 +41,7 @@ public class MysqlStorage<T> implements DataStorage<T> {
                 throwables.printStackTrace();
             }
 
-            throw new RuntimeException(e);
+            throw new ImporterException(e);
         } finally {
             try {
                 connection.setAutoCommit(true);
@@ -64,7 +58,6 @@ public class MysqlStorage<T> implements DataStorage<T> {
             StringBuilder buildMysqlFields = new StringBuilder();
             declaredFields = t.getDeclaredFields();
             for (Field declaredField : declaredFields) {
-                declaredField.setAccessible(true);
                 buildMysqlFieldsPlaceholder.append("?,");
                 buildMysqlFields.append(Util.toHumpString(declaredField.getName())).append(",");
             }
@@ -78,7 +71,6 @@ public class MysqlStorage<T> implements DataStorage<T> {
                                     buildMysqlFieldsPlaceholder
                                             .deleteCharAt(buildMysqlFieldsPlaceholder.length() - 1)
                                             .toString());
-            System.out.println("insert sql:" + insertSql);
             preparedStatement = connection.prepareStatement(insertSql);
         } catch (SQLException throwables) {
             throwables.printStackTrace();

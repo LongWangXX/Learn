@@ -1,12 +1,14 @@
-package com.lw.data.importer;
+package com.lw.data.reader;
 
 import com.alibaba.excel.EasyExcel;
+import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.fastjson.JSONObject;
+import com.lw.data.ImporterException;
 
+import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class ExcelDataReader<T> extends BaseDataReader<T> {
@@ -24,29 +26,38 @@ public class ExcelDataReader<T> extends BaseDataReader<T> {
 
     @Override
     public void close() {
-
+        try {
+            stream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     int count = 0;
 
     protected CompletableFuture<Void> readerDataInternal(InputStream stream, Class<T> clazz) {
-        return CompletableFuture.runAsync(() -> EasyExcel.read(stream, clazz, new ReadListener<T>() {
+        return CompletableFuture.runAsync(() -> EasyExcelFactory.read(stream, clazz, new ReadListener<T>() {
             @Override
             public void invoke(T data, AnalysisContext context) {
                 try {
                     count++;
                     getQueue().put(data);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    try {
+                        getQueue().put(e);
+                    } catch (InterruptedException interruptedException) {
+                        Thread.currentThread().interrupt();
+                    }
                 }
             }
 
             @Override
             public void doAfterAllAnalysed(AnalysisContext context) {
                 readerCom = null;
-                System.out.println(count);
             }
 
-        }).sheet().doRead());
+        }).doReadAll()).exceptionally((fn) -> {
+            throw new ImporterException(fn);
+        });
     }
 }

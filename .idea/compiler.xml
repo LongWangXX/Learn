@@ -14,6 +14,7 @@
         <module name="flink-1.12" />
         <module name="learn-akka" />
         <module name="commons-io" />
+        <module name="learn-easyexcel" />
         <module name="flink1.12" />
         <module name="learn-java" />
       </profile>
