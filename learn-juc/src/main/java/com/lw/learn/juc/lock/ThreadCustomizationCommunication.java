@@ -1,7 +1,4 @@
 package com.lw.learn.juc.lock;
-
-import sun.plugin2.os.windows.FLASHWINFO;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

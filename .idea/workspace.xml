@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67f9430d-ed95-4b9a-88ab-bcff2cead646" name="Default Changelist" comment="[learn-bigdata-flink] rocksdbdemo">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/399e3eed4830556b17eef3be0f61574d4009e77a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/resources/input/words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-easyexcel/src/main/java/com/lw/data/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/datagen/DataGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/datagen/DataGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/window/TumblingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-bigdata/flink-1.12/src/main/java/com/lw/learn/flink/window/TumblingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/atomicity/AutomicityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/atomicity/AutomicityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/completablefuture/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/completablefuture/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/heappensbefore/ThreadInterrrupet.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/heappensbefore/ThreadInterrrupet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/lock/RenntrantLockTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-juc/src/main/java/com/lw/learn/juc/lock/RenntrantLockTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaMethodAreaOOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/learn-jvm/src/main/java/org/fenixsoft/jvm/chapter2/JavaMethodAreaOOM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,10 +103,15 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Program Files (x86)\work\apache-maven-3.5.3-bin\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files (x86)/work/apache-maven-3.5.3-bin/apache-maven-3.5.3" />
-        <option name="userSettingsFile" value="C:\Program Files (x86)\work\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml" />
+        <option name="localRepository" value="D:\LongWang_Files\learn\software\apache-maven-3.5.3\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../learn/software/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\LongWang_Files\learn\software\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8 (2)" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -150,7 +139,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="305" />
@@ -274,32 +263,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="FsS&#9;PSI&#9;JAVA://org.apache.flink.runtime.state.filesystem.FsStateBackend" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8 (3)" />
-    <property name="last_opened_file_path" value="E:/heap/tomcat-heap-dump.hprof" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.16424417" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/LongWang_Files/project/learn",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LongWang_Files\project\learn" />
       <recent name="C:\project\Learn\learn-easyexcel\src\main\java\com\lw\data" />
       <recent name="G:\project\Learn\learn-jvm\src\main\java" />
       <recent name="G:\project\Learn\learn-bigdata\flink-1.12\input" />
@@ -312,7 +296,32 @@
       <recent name="com.lw.learn.flink.window" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.DP02_01背包">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DP02_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lw.data.dp.DP02_01背包" />
+      <module name="learn-data-structure" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.data.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DirectMemoryOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.fenixsoft.jvm.chapter2.DirectMemoryOOM" />
       <module name="learn-jvm" />
@@ -369,33 +378,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lw.learn.juc.Test" />
-      <module name="learn-juc" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lw.learn.juc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -432,19 +416,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.DP02_01背包" />
       <item itemvalue="Application.HeapOOM" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.DirectMemoryOOM" />
       <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.Exceptionally" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DP02_01背包" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.HeapOOM" />
         <item itemvalue="Application.Exceptionally" />
         <item itemvalue="Application.DirectMemoryOOM" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -531,6 +515,8 @@
       <workItem from="1712543961995" duration="12126000" />
       <workItem from="1715564586917" duration="9738000" />
       <workItem from="1715842095337" duration="7804000" />
+      <workItem from="1716078957490" duration="28000" />
+      <workItem from="1716079091289" duration="447000" />
     </task>
     <task id="LOCAL-00001" summary="learn juc completablefuture">
       <created>1624375711515</created>
@@ -636,7 +622,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
