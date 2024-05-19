@@ -5,34 +5,34 @@ import java.util.concurrent.locks.ReentrantLock;
 public class RenntrantLockTest2 {
     public static void main(String[] args) {
         ReentrantLock lock = new ReentrantLock();
-        try{
+        try {
             lock.lock();
             System.out.println("外层");
             lock.lock();
-                try{
-                    System.out.println("內层");
+            try {
+                System.out.println("內层");
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                //不释放锁
+//                lock.unlock();
 
-                }catch(Exception e){
-                    e.printStackTrace();
-                }finally{
-                    //不释放锁
-                   // lock.unlock();
-
-                }
-        }finally{
-            lock.lock();
+            }
+        } finally {
+            lock.unlock();
         }
+        System.out.println("a");
 
-        new Thread(()->{
+        new Thread(() -> {
             lock.lock();
-                try{
-                    System.out.println("start");
-                }catch(Exception e){
-                    e.printStackTrace();
-                }finally{
-                    lock.unlock();
-                }
-        },"A").start();
+            try {
+                System.out.println("start");
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                lock.unlock();
+            }
+        }, "A").start();
 
     }
 }

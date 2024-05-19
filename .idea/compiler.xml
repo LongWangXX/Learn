@@ -23,6 +23,7 @@
       <module name="flink" target="8" />
       <module name="flink112" target="1.5" />
       <module name="learn-datastructure" target="1.5" />
+      <module name="learn-rocksdb" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

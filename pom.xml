@@ -17,6 +17,7 @@
         <module>learn-akka</module>
         <module>learn-jvm</module>
         <module>learn-easyexcel</module>
+        <module>learn-bigdata/learn-rocksdb</module>
     </modules>
     <dependencies>
         <dependency>

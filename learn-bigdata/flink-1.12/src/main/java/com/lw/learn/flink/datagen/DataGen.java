@@ -1,6 +1,8 @@
 package com.lw.learn.flink.datagen;
 
 
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.configuration.RestOptions;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
@@ -15,8 +17,8 @@ public class DataGen {
     public static void main(String[] args) throws Exception {
 
         // set up the Java DataStream API
-        final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-
+        final StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(new Configuration());
+        env.setParallelism(3);
         // set up the Java Table API
         final StreamTableEnvironment tableEnv = StreamTableEnvironment.create(env);
 
@@ -29,28 +31,24 @@ public class DataGen {
                 "    WATERMARK FOR ts AS ts" +
                 ") WITH (\n" +
                 "  'connector' = 'datagen',\n" +
-                "  'rows-per-second' = '10',\n" +
-                "  'fields.id.kind' = 'sequence',\n" +
-                "  'fields.id.start' = '0',\n" +
-                "  'fields.id.end' = '100',\n" +
+                "  'rows-per-second' = '30000',\n" +
+                "  'fields.id.kind' = 'random',\n" +
+                "  'fields.id.min' = '1',\n" +
+                "  'fields.id.max' = '100',\n" +
                 "  'fields.app.min' = '1',\n" +
                 "  'fields.app.max' = '10',\n" +
                 "  'fields.channel.min' = '21',\n" +
                 "  'fields.channel.max' = '30'\n" +
                 ")";
 
-        tableEnv.sqlUpdate(sourceDDl);
-        // 优化后的 sql，解决了数据倾斜，将全量数据根据 userId 打散成 1024 个桶，
-        // 分桶内去重，最后聚合
-        String querySql = "select * from Orders";
+        tableEnv.executeSql(sourceDDl);
 
-        tableEnv.executeSql(querySql);
+        String querySql = "select if(id <90,1,id),count(*) from Orders group by if(id <90,1,id)";
+
 
         Table table = tableEnv.sqlQuery(querySql);
-        tableEnv.toAppendStream(table, Row.class).print();
-
-//        System.out.println(env.getExecutionPlan());
-        env.execute(DataGen.class.getSimpleName());
+        tableEnv.toRetractStream(table, Row.class).print();
+        env.execute();
     }
 
 }
